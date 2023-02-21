@@ -1,0 +1,34 @@
+.keypad{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    // grid-auto-rows: minmax(6px, auto);
+    
+    
+    button{
+        margin: 5px;
+        padding: 20px 10px;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 50%;
+        cursor: pointer;
+        text-align: center;
+        border: none;
+        background: #222;
+        color: #fff;
+    }
+
+    .zero{
+        grid-column: 1/3;
+        border-radius: 50px;
+        text-align: left;
+        padding-left: 25px;
+    }
+
+    .highlight-1{
+        background: rgb(201, 140, 8);
+    }
+    .highlight-2{
+        background: rgb(102, 94, 94);
+    }
+
+}
