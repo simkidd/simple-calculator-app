@@ -20,11 +20,12 @@ const Calculator = () => {
     }
 
     const handleEquals = () => {
+        // eslint-disable-next-line no-eval
         setResult(eval(result).toString())
     }
 
     const handlePercent = () => {
-        const percent = eval(result / 100).toString();
+        const percent = (result / 100).toString();
         setResult(percent)
     }
 
